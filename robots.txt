@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sayhellotoneverrecordings.jp/sitemap.xml
+Sitemap: https://sayhellotoneverrecordings.com/sitemap.xml
