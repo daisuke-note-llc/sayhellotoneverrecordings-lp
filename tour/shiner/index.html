@@ -90,7 +90,17 @@
     .show .plc .g { margin: 0.55rem 0 0; font-size: 0.92rem; font-weight: 500; line-height: 1.6; }
     .show .plc .g b { font-weight: 800; }
     .show .mt { text-align: right; font-size: 0.86rem; font-weight: 600; line-height: 1.85; white-space: nowrap; }
-    .datenote { margin: 1.5rem 0 0; font-family: var(--tmono); font-size: 0.78rem; letter-spacing: 0.06em; color: var(--tmute); }
+    .datenote { margin: 1.5rem 0 0; font-family: var(--tmono); font-size: 0.78rem; letter-spacing: 0.06em; color: var(--tmute); line-height: 1.7; }
+
+    /* Tickets */
+    .tickets { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem,2.5vw,1.5rem); }
+    .tk { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.1rem; min-height: 12rem; padding: clamp(1.75rem,4vw,2.75rem) 1.5rem; position: relative; background: var(--tlight); color: var(--amber-ink); border: 1px solid var(--amber); transition: transform 160ms ease, background 160ms ease; }
+    .tk:hover { transform: translateY(-3px); background: var(--amber); }
+    .tk-logo { height: 3.4rem; width: auto; }
+    .tk-logo-shtn { height: auto; width: min(15rem, 70%); }
+    .tk-label { font-family: var(--tmono); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.14em; }
+    .tk-arw { position: absolute; top: 0.9rem; right: 1.1rem; font-weight: 800; }
+    @media (max-width: 640px){ .tickets { grid-template-columns: 1fr; } }
 
     /* Videos */
     .videos { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem,2.5vw,1.75rem); }
@@ -140,7 +150,7 @@
         <a href="#dates">DATES</a>
         <a href="#watch">WATCH</a>
         <a href="#about">SHINER</a>
-        <a class="nav-contact" href="https://say-hello-to-never-recordings.square.site/" target="_blank" rel="noopener noreferrer">TICKETS</a>
+        <a class="nav-contact" href="#tickets">TICKETS</a>
       </nav>
     </div>
   </header>
@@ -158,7 +168,7 @@
       <p class="runline">2026.11.06 FRI — 11.09 MON / KYOTO · NAGOYA · TOKYO</p>
       <p class="lead">カンザスシティの至宝 SHINER、2002年以来の待望の再来日が決定。30年以上にわたり独自のヘヴィ・ロックを定義し続けてきた彼らが、昨年リリースした『BELIEVEYOUME』を引っ提げ再び日本へ降り立つ。</p>
       <div class="cta">
-        <a class="tbtn" href="https://say-hello-to-never-recordings.square.site/" target="_blank" rel="noopener noreferrer">Tickets ↗</a>
+        <a class="tbtn" href="#tickets">Tickets ↓</a>
         <a class="tbtn tbtn-ghost" href="#dates">Tour Dates ↓</a>
       </div>
     </section>
@@ -187,7 +197,24 @@
           <p class="mt">OPEN 18:00 / START 18:30<br>ADV ¥6,500 (+1D)<br>STUDENT ¥2,000 (+1D)</p>
         </div>
       </div>
-      <p class="datenote">※ +1D = ドリンク代別途 ／ チケット：say-hello-to-never-recordings.square.site</p>
+      <p class="datenote">※ +1D = ドリンク代別途 ／ チケットは下記 TICKETS より</p>
+    </section>
+
+    <section class="tsec" id="tickets" aria-label="チケット">
+      <p class="tsec-head">Tickets</p>
+      <div class="tickets">
+        <a class="tk" href="https://eplus.jp/" target="_blank" rel="noopener noreferrer">
+          <img class="tk-logo" src="../../assets/eplus-logo.png" width="256" height="256" alt="e+（イープラス）">
+          <span class="tk-label">e+ TICKET</span>
+          <span class="tk-arw" aria-hidden="true">↗</span>
+        </a>
+        <a class="tk" href="https://say-hello-to-never-recordings.square.site/" target="_blank" rel="noopener noreferrer">
+          <img class="tk-logo tk-logo-shtn" src="../../assets/logo-black.png" width="1836" height="313" alt="SAY HELLO TO NEVER RECORDINGS">
+          <span class="tk-label">SAY HELLO TICKET</span>
+          <span class="tk-arw" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <p class="datenote">ADV ¥6,500（+1D）／ STUDENT ¥2,000（+1D）　全公演共通。<br>e+ は4公演をまとめてお取り扱いします。</p>
     </section>
 
     <section class="tsec" id="watch" aria-label="映像">
