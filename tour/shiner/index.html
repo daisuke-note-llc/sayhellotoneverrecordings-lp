@@ -76,8 +76,8 @@
     .tbtn-ghost:hover { background: var(--amber); color: var(--amber-ink); }
 
     .tsec { padding: clamp(5rem,10vw,8rem) var(--page-padding) 0; max-width: 1180px; margin-inline: auto; }
-    .tsec-head { margin: 0 0 clamp(2rem,5vw,3.5rem); font-family: var(--tmono); font-size: 0.8rem; letter-spacing: 0.22em; color: var(--amber); text-transform: uppercase; display: flex; align-items: center; gap: 1rem; }
-    .tsec-head::before { content: ""; width: 2.5rem; height: 1px; background: var(--amber); }
+    .tsec-head { margin: 0 0 clamp(2rem,5vw,3.5rem); font-family: var(--tmono); font-size: clamp(1.9rem,5vw,3.4rem); font-weight: 700; line-height: 1; letter-spacing: 0.01em; color: var(--amber); text-transform: uppercase; display: flex; align-items: center; gap: 1rem; }
+    .tsec-head::before { content: ""; width: clamp(1.5rem,4vw,3rem); height: 3px; background: var(--amber); flex-shrink: 0; }
 
     /* Dates — amber panel, monospace */
     .datepanel { background: var(--amber); color: var(--amber-ink); padding: clamp(1.75rem,4vw,3rem); }
