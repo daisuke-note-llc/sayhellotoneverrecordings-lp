@@ -590,6 +590,8 @@ button { font: inherit; }
 .show .info { font-size: 0.85rem; color: var(--muted); }
 .show .info a { color: var(--signal); border-bottom: 1px solid currentColor; font-weight: 700; }
 .article-solo { margin-top: clamp(2.5rem,5vw,4rem); max-width: 760px; }
+.article-embed { margin: 1rem 0 0; position: relative; aspect-ratio: 16 / 9; border: 1px solid var(--line); background: #000; }
+.article-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .tracklist { margin: 1rem 0 0; padding: 0; list-style: none; border-top: 2px solid var(--ink); counter-reset: trk; }
 .tracklist li { display: flex; align-items: baseline; gap: 1rem; padding: 0.85rem 0; border-bottom: 1px solid var(--line); font-size: 1rem; }
 .tracklist li .n { min-width: 1.4rem; font-weight: 800; color: var(--muted); font-variant-numeric: tabular-nums; }
