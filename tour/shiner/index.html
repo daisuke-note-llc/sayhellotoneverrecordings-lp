@@ -87,6 +87,8 @@
     .show .dt .dow { display: block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.22em; margin-top: 0.25rem; }
     .show .plc .v { font-size: clamp(1.2rem,2.6vw,1.75rem); font-weight: 800; letter-spacing: 0.01em; }
     .show .plc .c { font-size: 0.9rem; font-weight: 700; }
+    .show .soldout { display: inline-block; margin-left: 0.6rem; padding: 0.12em 0.5em; background: var(--amber-ink); color: var(--amber); font-family: var(--tmono); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; vertical-align: 0.12em; }
+    .show.is-soldout .mt { opacity: 0.62; }
     .show .plc .g { margin: 0.55rem 0 0; font-size: 0.92rem; font-weight: 500; line-height: 1.6; }
     .show .plc .g b { font-weight: 800; }
     .show .mt { text-align: right; font-size: 0.86rem; font-weight: 600; line-height: 1.85; white-space: nowrap; }
@@ -180,9 +182,9 @@
           <div class="plc"><span class="v">GATTACA</span> <span class="c">／ 京都</span><p class="g"><b>w/</b> CONGRATULATIONS, nim</p></div>
           <p class="mt">OPEN 18:30 / START 19:00<br>ADV ¥6,500 (+1D)<br>STUDENT ¥2,000 (+1D)</p>
         </div>
-        <div class="show">
+        <div class="show is-soldout">
           <p class="dt">11.07<span class="dow">SAT</span></p>
-          <div class="plc"><span class="v">STIFFSLACK</span> <span class="c">／ 名古屋</span><p class="g"><b>w/</b> CONGRATULATIONS, DOIMOI, folio</p></div>
+          <div class="plc"><span class="v">STIFFSLACK</span> <span class="c">／ 名古屋</span><span class="soldout">SOLD OUT</span><p class="g"><b>w/</b> CONGRATULATIONS, DOIMOI, folio</p></div>
           <p class="mt">OPEN 18:00 / START 18:30<br>ADV ¥6,500 (+1D)<br>STUDENT ¥2,000 (+1D)</p>
         </div>
         <div class="show">
