@@ -67,9 +67,12 @@
     .thero h1 { margin: 0; font-size: clamp(3rem,12vw,11rem); font-weight: 800; line-height: 0.86; letter-spacing: -0.05em; color: #fff; }
     .thero h1 .yr { color: var(--amber); }
     .thero .runline { margin: 1.5rem 0 0; font-family: var(--tmono); font-size: clamp(0.85rem,1.7vw,1.15rem); letter-spacing: 0.08em; color: var(--amber); }
-    .thero .tour-fin { position: relative; z-index: 2; margin: 1.5rem 0 0; display: inline-flex; flex-direction: column; gap: 0.45rem; padding: 0.95rem 1.3rem; border: 1px solid var(--amber); background: rgba(227,165,39,0.06); font-family: var(--tmono); }
-    .thero .tour-fin .te-main { font-size: clamp(1rem,2.3vw,1.45rem); font-weight: 700; letter-spacing: 0.05em; color: var(--amber); }
-    .thero .tour-fin .te-sub { font-size: clamp(0.75rem,1.4vw,0.9rem); letter-spacing: 0.04em; color: var(--amber); opacity: 0.82; }
+    .thero .tour-fin { position: relative; z-index: 2; margin: 1.75rem 0 0; display: inline-flex; flex-direction: column; align-items: flex-start; gap: 0.6rem; padding: 1.3rem 1.7rem; background: var(--amber); font-family: var(--tmono); box-shadow: 0 12px 34px rgba(0,0,0,0.5); animation: finGlow 2.4s ease-in-out infinite; }
+    .thero .tour-fin .te-badge { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.3em; text-transform: uppercase; background: var(--amber-ink); color: var(--amber); padding: 0.3em 0.8em; }
+    .thero .tour-fin .te-main { font-size: clamp(1.45rem,3.6vw,2.4rem); font-weight: 800; letter-spacing: 0.02em; line-height: 1.04; color: var(--amber-ink); }
+    .thero .tour-fin .te-sub { font-size: clamp(0.8rem,1.5vw,1rem); letter-spacing: 0.03em; color: var(--amber-ink); opacity: 0.9; }
+    @keyframes finGlow { 0%,100% { box-shadow: 0 12px 34px rgba(0,0,0,0.5), 0 0 0 0 rgba(227,165,39,0.55); } 50% { box-shadow: 0 12px 34px rgba(0,0,0,0.5), 0 0 26px 4px rgba(227,165,39,0.65); } }
+    @media (prefers-reduced-motion: reduce) { .thero .tour-fin { animation: none; } }
     .thero .lead { max-width: 44rem; margin: 1.75rem 0 0; font-size: clamp(0.98rem,1.3vw,1.15rem); line-height: 1.9; color: var(--tlight); }
     .thero .cta { margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 1.1rem 1.4rem; align-items: center; }
 
@@ -170,7 +173,7 @@
       <p class="kick">SAY HELLO TO NEVER RECORDINGS presents</p>
       <h1 id="tour-title">SHINER<br>JAPAN TOUR<br><span class="yr">2026</span></h1>
       <p class="runline">2026.11.06 FRI — 11.09 MON / KYOTO · NAGOYA · TOKYO</p>
-      <p class="tour-fin"><span class="te-main">A MOMENT THAT WON’T RETURN.</span><span class="te-sub">SHINER JAPAN TOUR 2026 — 全公演終了。二度と還らない夜を、ありがとうございました。</span></p>
+      <p class="tour-fin"><span class="te-badge">Tour Finished</span><span class="te-main">A MOMENT THAT WON’T RETURN.</span><span class="te-sub">SHINER JAPAN TOUR 2026 — 全公演終了。二度と還らない夜を、ありがとうございました。</span></p>
       <p class="lead">カンザスシティの至宝 SHINER、2002年以来の待望の再来日が決定。30年以上にわたり独自のヘヴィ・ロックを定義し続けてきた彼らが、昨年リリースした『BELIEVEYOUME』を引っ提げ再び日本へ降り立つ。</p>
       <div class="cta">
         <a class="tbtn" href="#tickets">Tickets ↓</a>
